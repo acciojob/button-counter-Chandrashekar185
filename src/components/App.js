@@ -1,20 +1,18 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import React from "react";
 import './../styles/App.css';
 
+
 const App = () => {
+ const [counter.updateCounter]=useStae(0);
+  const onClick=()=>{
+    updateCounter(counter+1);
+  };
   return (
-  
-        {/* Do not remove the main div */}
-    let[counter,updatecounter]=useState(0);
-        const onclick=(){
-            updatecounter(counter+1);
-        };
   <div>
-      
-        <p>button clicked{counter}times</p>
-        <button onclick={onclick}>click me</button>
-  </div>
+   <p>button clicked {counter} times</p>
+    <button onClick={onClick}>click me</button>
+    </div>
 
   )
 }
