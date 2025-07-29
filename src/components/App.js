@@ -3,7 +3,7 @@ import './../styles/App.css';
 
 
 const App = () => {
- const [counter.updateCounter]=useStae(0);
+ const [counter,updateCounter]=useState(0);
   const onClick=()=>{
     updateCounter(counter+1);
   };
